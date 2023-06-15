@@ -1,0 +1,83 @@
+<!-- 
+	95page
+	입력창
+	
+		문장 입력 태그
+			<input type = text> => size = "문자 개수", name = "자바에서 받을 경우"
+									id, class => JavaScript/CSS
+			<input type = password> => 비밀번호 입력		
+									size = "문자 개수", name = "자바에서 받을 경우"
+									id, class => JavaScript/CSS		
+			<textarea> : 여러 줄 문자 입력							
+						 name="", rows="" cols=""
+						 		   ㅣ       ㅣ
+						 		 height   width 
+		버튼 종류
+			<input type = button> : 기능은 없다 => JavaScript
+									value = "로그인"
+			<input type = submit> : 데이터를 모아서 한 번에 전송
+									=> form 태그 동반해야 함
+									<form method = "" action = "받는 파일">
+									        ㅣ
+									      GET / POST / PUT / DELETE	=> RestFul
+									      									=> 웹에선 GET/POST
+									      GET : 데이터를 전송할 떄 URL 뒤에 첨부
+									            ?변수=값
+									      POST : 데이터를 감춰서 보낸다
+									      		?가 없다
+				=> 데이터를 전송하는 대표적인 태그들
+					HTML
+						<a> : GET만 사용
+						<form> : GET/POST
+					JavaScript
+						location.href="" : GET만 사용
+					Java
+						sendRedirect("") : GET만 사용
+						
+						=> GET은 default (화면 출력)
+						=> POST : 값을 받아서 처리
+							회원가입, 글쓰기, 수정하기, ...
+			<input type = radio> : name="", value=""
+								   ----- name이 동일 => GROUP
+			<input type = radio value = "남자">  <- 전송할 목적 // -> 남자 사용자게게 보여줄 목적 (출력)					   							      		 
+			<input type = checkbox value="" name=""> 운동
+						  -------- name이 동일해야 한다
+						  			>> 여러 개 선택 가능하지만 데이터 받을 때 한 번에 받아야 하니까 그룹으로 묶어야 한다
+			<button> 로그인 </button> : submit		
+										      		     
+		파일 업로드
+			<input type="file" size=""> : 파일 선택창 띄우기
+		날짜 출력
+			<input type = date> : 날짜 박스 띄우기
+		숨김 태그
+			<input type = hidden> => 비밀번호, 게시물 번호
+		기타	
+			<input type = number max="" min="">
+			<input type = range max="" min="">
+			<lebel>
+			<select> 콤보
+			   ㅣ
+			<option>
+		
+		
+		
+		
+ -->		
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+			<input type = radio value = "남자" name="sex"> 남자
+			<input type = radio value = "여자" name="sex"> 여자
+							<!-- name이 같아야 그룹으로 묶인다 > 한 개만 선택 가능하게 함 -->
+							
+			<input type = file size=200>		
+			
+			<input type = date>		
+
+</body>
+</html>
