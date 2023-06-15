@@ -1,0 +1,134 @@
+<!-- 
+
+	79page 목록 출력 
+	1. ul : 순서가 없는 출력 (메뉴) => 카드
+	  (unorder list)
+		ul - li
+			 -- 목록 출력
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		 
+	2. ol : 순서가 있는 출력 => 문제 출제
+	  (order list)
+		ol - li
+		<ol>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ol>
+		 
+	3. dl : 상세보기 (data list)
+		dl - dt,dd
+		<dl>
+			<dt></dt> => 제목
+			<dd></dd> => 내용
+			<dt></dt> => 제목
+			<dd></dd> => 내용
+		</dl>
+	4. table : 목록 출력
+		table - tr - th or td
+				--   --    --
+			    라인  제목  실제출력
+			    
+			    <table>
+				    <tr>
+					    <th></th>
+					    <th></th>
+				    </tr>
+				    <tr>
+					    <td></td>
+					    <td></td>
+				    </tr>
+			    </table>
+	
+
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+
+<h1>UL 태그</h1>
+
+	<ul>
+		<li>java</li>
+		<li>oracle</li>
+		<li>html css</li>
+		<li>java script</li>
+		<li>jsap</li>
+		<li>spring</li>	
+	</ul>
+
+<h1>OL 태그</h1>
+
+	<ol>
+		<li>java</li>
+		<li>oracle</li>
+		<li>html css</li>
+		<li>java script</li>
+		<li>jsap</li>
+		<li>spring</li>	
+	</ol>
+	
+	<h1>DL 태그</h1>
+	<dl>
+		<dt>oracle</dt>
+		<dd>공통으로 사용하는 데이터를 저장하는 공간(데이터 제어 가능)</dd>	
+		<dt>java</dt>
+		<dd>브라우저와 오라클 연결</dd>	
+		<dt>html css</dt>
+		<dd>정적언어 => 브라우저에 출력 담당</dd>	
+	 	<dt>javascript</dt>
+		<dd>브라우저에서 사용자의 요청 처리(동적)</dd>	
+		<dt>jsp</dt>
+		<dd>서버에서 사용자 요청에 따라 변경</dd>
+		<dt>spring</dt>
+		<dd>통함 개발 라이브러리</dd>
+		<dt>aws</dt>
+		<dd>서버 컴퓨터가 필요하다</dd>			
+	</dl>
+	
+	<h1>table 태그</h1>
+	<table width=500 border=1 bordercolor=green> 
+	<tr>
+		<th>이름</th>
+		<th>국어</th>
+		<th>영어</th>
+		<th>수학</th>						
+	</tr>
+	<tr>
+		<td>90</td>
+		<td>90</td>
+		<td>90</td>
+		<td>90</td>
+	</tr>
+		<tr>
+		<td>90</td>
+		<td>90</td>
+		<td>90</td>
+		<td>90</td>
+	</tr>
+		<tr>
+		<td>90</td>
+		<td>90</td>
+		<td>90</td>
+		<td>90</td>
+	</tr>
+		<tr>
+		<td>90</td>
+		<td>90</td>
+		<td>90</td>
+		<td>90</td>
+	</tr>
+	
+	</table>
+
+</body>
+</html>
