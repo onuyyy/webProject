@@ -1,0 +1,63 @@
+<!-- 
+	아이디 선택자
+		= 중복이 없어야 한다
+	HTML, XML => 아이디가 있는 경우에는 중복된 데이터가 있으면 안 된다
+		   
+	HTML에서 아이디는 화면 분할할 때 자주 등장
+		=> 템플릿 태그
+		<div> <span>	   
+		   
+		   
+		   
+		   	
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<style>
+#header {
+	width:960px;
+	height:150px;
+	background-color:yellow;
+}
+
+.aside {	/* 클래스로 사용하는 게 좋음 여러 개 나올 수 있음 */
+	width:200px;
+	height:500px;
+	background-color:blue;
+	float:left;
+}
+
+.article {		/* 클래스로 사용하는 게 좋음 여러 개 나올 수 있음 */
+	width:750px;
+	height:500px;
+	background-color:cyan;
+}
+
+#footer {
+	width:960px;
+	height:150px;
+	background-color:magenta;
+	clear:both;
+}
+
+</style>
+
+<body>
+
+	<div id="header">
+	
+	</div>
+	<div class="aside"></div>
+	<div class="article"></div>
+	<div id="footer">
+	
+	</div>
+
+
+</body>
+</html>
